@@ -1,0 +1,72 @@
+<div class="prueba">
+  <nav class="nav-free">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Prueba</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a routerLink="/">Inicio</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <a routerLink="/">Inicio</a>
+    </li>
+  </ul>
+
+  <div class="container">
+    <div class="row especial">
+      <div class="card-panel z-depth-3">
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <h1>{{detail.title}}</h1>
+          </div>
+          <div class="col s12 m12 l12">
+            <h4>Datos</h4>
+          </div>
+          <div class="col s12 m12 l12">
+
+            <div class="col s3 m4 l4 center">
+              <div class="chip">
+                <b>Artista: </b> {{detail.name}}
+              </div>
+            </div>
+            <div class="col s3 m3 l3 center">
+              <div class="chip" >
+                <b>genero: </b>{{detail.genres[0]}}
+              </div>
+              <div class="chip" >
+                <b>genero: </b>{{detail.genres[1]}}
+              </div>
+              <div class="chip" >
+                <b>genero: </b>{{detail.genres[2]}}
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m12 l12">
+            <h4>Imagenes</h4>
+          </div>
+          <div class="col s12 m12 l12">
+            <div class="card-panel">
+              <img [src]="detail.images[0].url" alt="" class="responsive-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <footer class="page-footer indigo">
+    <div class="footer-copyright">
+      <div class="container">
+        <a class="grey-text text-lighten-4 right" href="https://dannielnavas.github.io" target="_blanck">Portafolio Luis Daniel Gordo Navas</a>
+      </div>
+    </div>
+  </footer>
+</div>

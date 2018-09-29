@@ -1,0 +1,47 @@
+<div class="prueba">
+  <nav class="nav-free">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Prueba</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <!-- Recorrido del arreglo de films -->
+      <div class="col s12 m12 l12 center">
+        <h1 class="white-text fuente">Albums</h1>
+      </div>
+      <div class="col s12 m12 l12">
+        <div class="row">
+          <div class="col s12 m7">
+            <div class="card">
+              <div class="card-image">
+                <img [src]="albumsSpoti.albums[0].images[0].url">
+                <span class="card-title">{{ albumsSpoti.albums[0].name }}</span>
+              </div>
+              <div class="card-content">
+                <p>{{ albumsSpoti.albums[0].artists[0].name }}</p>
+              </div>
+              <div class="card-action">
+                <a routerLink="/detail" [queryParams]="{id:albumsSpoti.albums[0].artists[0].id}" >Artista</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <footer class="page-footer indigo">
+      <div class="footer-copyright">
+        <div class="container">
+          <a class="grey-text text-lighten-4 right" href="https://dannielnavas.github.io" target="_blanck">Portafolio
+            Luis Daniel Gordo Navas</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

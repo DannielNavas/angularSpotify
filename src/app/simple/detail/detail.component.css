@@ -1,0 +1,15 @@
+.prueba {
+  background-image: url('https://images.unsplash.com/photo-1467685790346-20bfe73a81f0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c8ef899936afbb95544d17c93fbee3c8&auto=format&fit=crop&w=1500&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.nav-free {
+  background-color: #3F51B5;
+}
+
+.especial {
+  margin-bottom: 0;
+}
